@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.david.barcodecart.CartActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="58sp"
+            android:background="@color/colorMySlave">
+
+            <LinearLayout
+                android:id="@+id/layoutRtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="10sp"
+                android:layout_marginTop="7sp">
+
+                <TextView
+                    android:id="@+id/txtIconRtn"
+                    android:layout_width="45sp"
+                    android:layout_height="45sp"
+                    android:text="@string/fa_arrow_left"
+                    android:textColor="@color/colorMyWhite"
+                    android:textSize="16sp"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="My Sales"
+                    android:textColor="@color/colorMyWhite"
+                    android:textSize="18sp"
+                    android:gravity="center"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="9sp"
+                android:layout_marginRight="10sp">
+
+                <Button
+                    android:id="@+id/btnSave"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:layout_width="45sp"
+                    android:layout_height="45sp"
+                    android:background="@color/colorMySlave"
+                    android:text="@string/fa_floppy_o"
+                    android:textColor="@color/colorMyWhite"
+                    android:textSize="26sp"
+                    android:gravity="center"
+                    android:visibility="invisible"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="51sp">
+
+            <LinearLayout
+                android:id="@+id/tabToday"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorMyGray_1"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/txtIconToday"
+                    android:layout_width="0sp"
+                    android:layout_height="match_parent"
+                    android:gravity="right|center"
+                    android:text="@string/fa_calendar_o"
+                    android:textColor="@color/colorMyRed"
+                    android:textSize="24sp"
+                    android:layout_weight="1"/>
+
+                <TextView
+                    android:id="@+id/txtToday"
+                    android:layout_width="0sp"
+                    android:layout_height="match_parent"
+                    android:text="today"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:textColor="@color/colorMyBlack"
+                    android:textAllCaps="true"
+                    android:paddingLeft="7sp"
+                    android:gravity="left|center"
+                    android:layout_weight="2"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/tabHistory"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorMyGray_5"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/txtIconHistory"
+                    android:layout_width="0sp"
+                    android:layout_height="match_parent"
+                    android:gravity="right|center"
+                    android:text="@string/fa_calendar"
+                    android:textColor="@color/colorMyGray_9"
+                    android:textSize="24sp"
+                    android:layout_weight="1"/>
+
+                <TextView
+                    android:id="@+id/txtHistory"
+                    android:layout_width="0sp"
+                    android:layout_height="match_parent"
+                    android:text="history"
+                    android:textSize="18sp"
+                    android:textColor="@color/colorMyGray_9"
+                    android:textAllCaps="true"
+                    android:paddingLeft="7sp"
+                    android:gravity="left|center"
+                    android:layout_weight="2"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40sp"
+            android:background="@color/colorMyGray_7"
+            android:paddingTop="1px"
+            android:weightSum="100">
+
+            <TextView
+                android:layout_width="0sp"
+                android:layout_height="match_parent"
+                android:layout_weight="40"
+                android:gravity="center"
+                android:layout_marginRight="1px"
+                android:padding="10sp"
+                android:text="Name"
+                android:textColor="@color/colorMyBlack"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:background="@color/colorMyGray_1"/>
+
+
+            <TextView
+                android:layout_width="0sp"
+                android:layout_height="match_parent"
+                android:layout_weight="15"
+                android:gravity="center"
+                android:layout_marginRight="1px"
+                android:padding="10sp"
+                android:text="Qty"
+                android:textColor="@color/colorMyBlack"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:background="@color/colorMyGray_1"/>
+
+
+            <TextView
+                android:layout_width="0sp"
+                android:layout_height="match_parent"
+                android:layout_weight="20"
+                android:gravity="center"
+                android:layout_marginRight="1px"
+                android:padding="10sp"
+                android:paddingRight="10sp"
+                android:text="Price"
+                android:textColor="@color/colorMyBlack"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:background="@color/colorMyGray_1"/>
+
+            <TextView
+                android:id="@+id/txtTitleDate"
+                android:layout_width="0sp"
+                android:layout_height="match_parent"
+                android:layout_weight="25"
+                android:gravity="center"
+                android:paddingRight="15sp"
+                android:text="Date"
+                android:textColor="@color/colorMyBlack"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:background="@color/colorMyGray_1"/>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/layoutToday"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ListView
+                    android:id="@+id/listTodayProducts"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/colorMyWhite"
+                    android:fadeScrollbars="false"
+                    android:fastScrollStyle="@drawable/scrollbar_vertical_thum"
+                    android:scrollbarThumbVertical="@drawable/scrollbar_vertical_thum"
+                    android:scrollbarTrackVertical="@drawable/scrollbar_vertical_track" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/colorMyGray_9"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="71sp"
+                    android:background="@color/colorMyGray_5">
+
+                    <LinearLayout
+                        android:id="@+id/layoutScanButton_Cart"
+                        android:layout_width="match_parent"
+                        android:layout_height="51sp"
+                        android:background="@drawable/scan_button_border"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="30sp"
+                        android:layout_marginRight="30sp"
+                        android:layout_marginTop="10sp"
+                        android:layout_above="@+id/layoutCartButton"
+                        android:layout_centerHorizontal="true">
+
+                        <TextView
+                            android:id="@+id/txtIconScanButton_Cart"
+                            android:layout_width="0sp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.8"
+                            android:gravity="right|center"
+                            android:text="@string/fa_eye"
+                            android:textColor="@color/colorMyWhite"
+                            android:textSize="30sp" />
+
+                        <TextView
+                            android:id="@+id/txtScanButton"
+                            android:layout_width="0sp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1.2"
+                            android:text="SCAN"
+                            android:textColor="@color/colorMyWhite"
+                            android:textSize="24sp"
+                            android:textStyle="bold"
+                            android:paddingLeft="15sp"
+                            android:gravity="left|center"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutHistory"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <ListView
+                    android:id="@+id/listHistoryProducts"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/colorMyWhite"
+                    android:fadeScrollbars="false"
+                    android:fastScrollStyle="@drawable/scrollbar_vertical_thum"
+                    android:scrollbarThumbVertical="@drawable/scrollbar_vertical_thum"
+                    android:scrollbarTrackVertical="@drawable/scrollbar_vertical_track" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/colorMyGray_9"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="71sp"
+                    android:background="@color/colorMyGray_2"
+                    android:padding="10sp">
+
+                    <LinearLayout
+                        android:layout_width="0sp"
+                        android:orientation="vertical"
+                        android:layout_height="match_parent"
+                        android:gravity="bottom"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="From"
+                            android:textSize="12dp"
+                            android:textStyle="bold"
+                            android:textColor="@color/colorMyDarkBlue"
+                            android:id="@+id/fromText"/>
+                        <EditText
+                            android:id="@+id/fromDateText"
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:background="@drawable/date_border"
+                            android:focusable="false"
+                            android:text="06/21/2017"
+                            android:textColor="@color/colorMyDarkBlue"
+                            android:textStyle="bold"
+                            android:gravity="center"
+                            android:textSize="18dp"/>
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="10sp"
+                        android:layout_height="30sp"
+                        android:layout_gravity="bottom"
+                        android:text="-"
+                        android:textColor="@color/colorMyBlack"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:gravity="center"/>
+
+                    <LinearLayout
+                        android:layout_width="0sp"
+                        android:orientation="vertical"
+                        android:layout_height="match_parent"
+                        android:gravity="bottom"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="To"
+                            android:textSize="12dp"
+                            android:textStyle="bold"
+                            android:textColor="@color/colorMyRed"
+                            android:id="@+id/toText"/>
+
+                        <EditText
+                            android:id="@+id/toDateText"
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:background="@drawable/date_border"
+                            android:focusable="false"
+                            android:text="06/21/2017"
+                            android:textStyle="bold"
+                            android:textColor="@color/colorMyRed"
+                            android:gravity="center"
+                            android:textSize="18dp"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

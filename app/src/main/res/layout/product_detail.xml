@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60sp"
+    android:background="@color/colorMyGray_7"
+    android:paddingTop="1px"
+    android:weightSum="100">
+
+    <TextView
+        android:id="@+id/txtItemName"
+        android:layout_width="0sp"
+        android:layout_height="match_parent"
+        android:layout_weight="40"
+        android:gravity="left|center"
+        android:layout_marginRight="1px"
+        android:padding="10sp"
+        android:text="WOMEN T-SHIRTS B8"
+        android:textColor="@color/colorMyBlack"
+        android:textSize="12sp"
+        android:background="@color/colorMyWhite"/>
+
+
+    <TextView
+        android:id="@+id/txtItemQty"
+        android:layout_width="0sp"
+        android:layout_height="match_parent"
+        android:layout_weight="15"
+        android:gravity="center"
+        android:layout_marginRight="1px"
+        android:padding="5sp"
+        android:text="3"
+        android:textColor="@color/colorMyDarkGreen"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        android:background="@color/colorMyWhite"/>
+
+
+    <TextView
+        android:id="@+id/txtItemPrice"
+        android:layout_width="0sp"
+        android:layout_height="match_parent"
+        android:layout_weight="20"
+        android:gravity="center"
+        android:layout_marginRight="1px"
+        android:padding="5sp"
+        android:text="24.00"
+        android:textColor="@color/colorMySoftBrown"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:background="@color/colorMyWhite"/>
+
+    <TextView
+        android:id="@+id/txtItemDate"
+        android:layout_width="0sp"
+        android:layout_height="match_parent"
+        android:layout_weight="25"
+        android:gravity="center"
+        android:paddingLeft="5sp"
+        android:paddingRight="10sp"
+        android:text="2017-9-28"
+        android:textColor="@color/colorMyBlack"
+        android:textSize="12sp"
+        android:background="@color/colorMyWhite"/>
+
+</LinearLayout>

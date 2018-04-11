@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorMyMain"
+    tools:context="com.example.david.barcodecart.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="7sp"
+        android:background="@color/colorMyWhite"
+        tools:context="com.example.david.barcodecart.MainActivity">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/logo"
+            android:scaleType="fitStart"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <LinearLayout
+            android:id="@+id/layoutScanButton"
+            android:layout_width="match_parent"
+            android:layout_height="51sp"
+            android:background="@drawable/scan_button_border"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="30sp"
+            android:layout_marginRight="30sp"
+            android:layout_above="@+id/layoutCartButton"
+            android:layout_centerHorizontal="true">
+
+            <TextView
+                android:id="@+id/txtIconScanButton"
+                android:layout_width="0sp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.8"
+                android:text="@string/fa_eye"
+                android:textColor="@color/colorMyWhite"
+                android:gravity="right|center"
+                android:textSize="30sp"/>
+
+            <TextView
+                android:id="@+id/txtScanButton"
+                android:layout_width="0sp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.2"
+                android:text="SCAN"
+                android:textColor="@color/colorMyWhite"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:paddingLeft="15sp"
+                android:gravity="left|center"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layoutCartButton"
+            android:layout_width="match_parent"
+            android:layout_height="51sp"
+            android:background="@drawable/cart_button_border"
+            android:layout_marginBottom="30dp"
+            android:layout_marginLeft="30sp"
+            android:layout_marginRight="30sp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true">
+
+            <TextView
+                android:id="@+id/txtIconCartButton"
+                android:layout_width="0sp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.8"
+                android:text="@string/fa_shopping_cart"
+                android:textColor="@color/colorMyWhite"
+                android:gravity="right|center"
+                android:textSize="30sp"/>
+
+            <TextView
+                android:id="@+id/txtCartButton"
+                android:layout_width="0sp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.2"
+                android:text="SALES"
+                android:textColor="@color/colorMyWhite"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:paddingLeft="15sp"
+                android:gravity="left|center"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>
+

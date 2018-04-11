@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="actionbar_opacity">#33000000</color>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="accent">#E040FB</color>
+    <color name="primary_text">#212121</color>
+    <color name="secondary_text">#727272</color>
+    <color name="icons">#FFFFFF</color>
+    <color name="divider">#B6B6B6</color>
+    <color name="colorBlack">#000000</color>
+
+    <color name="colorMyDarkBlue">#3F51B5</color>
+    <color name="colorMyRed">#E51C23</color>
+    <color name="colorMyMain">#009247</color>
+    <color name="colorMySlave">#4DB748</color>
+    <color name="colorMyWhite">#FFFFFF</color>
+    <color name="colorMyGray_1">#F8F8F8</color>
+    <color name="colorMyGray_2">#F0F0F0</color>
+    <color name="colorMyGray_3">#F8F8F8</color>
+    <color name="colorMyGray_4">#EBEBEB</color>
+    <color name="colorMyGray_5">#E3E3E3</color>
+    <color name="colorMyGray_6">#BBBBBB</color>
+    <color name="colorMyGray_7">#a0a0a0</color>
+    <color name="colorMyGray_8">#828282</color>
+    <color name="colorMyGray_9">#444444</color>
+    <color name="colorMyGray_10">#101010</color>
+    <color name="colorMyBlack">#000000</color>
+    <color name="colorMyGreen">#00cc00</color>
+    <color name="colorMyDarkGreen">#19b400</color>
+    <color name="colorMyTransparent">#0000</color>
+    <color name="colorMySoftBrown">#ff8c00</color>
+
+
+</resources>
